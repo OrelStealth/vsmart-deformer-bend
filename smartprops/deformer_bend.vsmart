@@ -1,0 +1,1748 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrfunknown:version{5ab656f0-06de-478a-804e-489e82994fb5} -->
+{
+	m_Variables = 
+	[
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty004"
+			m_ParameterName = " === Model settings ==="
+			m_bExposeAsParameter = true
+        },
+        {
+			_class = "CSmartPropVariable_Model"
+			m_VariableName = "model"
+			m_ParameterName = "Model"
+			m_bExposeAsParameter = true
+			m_DefaultValue = resource_name:"models/props/de_train/hr_train_s2/train_spill/spill_kit_barrier_01a.vmdl"
+        },
+		{
+            _class = "CSmartPropVariable_String"
+            m_DefaultValue = "type_skin_name_here"
+            m_bExposeAsParameter = true
+            m_DisplayName = "Model skin"
+            m_VariableName = "model_skin"
+        },
+		{
+			_class = "CSmartPropVariable_Color"
+			m_VariableName = "model_tint"
+			m_ParameterName = "Model tint"
+			m_bExposeAsParameter = true
+			m_DefaultValue = [255,255,255]
+		},
+        {
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_scale"
+			m_ParameterName = "Model scale"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 1
+			m_flParamaterMinValue = 0.25
+			m_flParamaterMaxValue = 2
+        },
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_origin_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Model origin X"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_origin_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Model origin Y"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_origin_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Model origin Z"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_angles_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Model rotate X"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_angles_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Model rotate Y"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model_angles_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Model rotate Z"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty000"
+			m_ParameterName = " "
+			m_bExposeAsParameter = true
+        },
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty001"
+			m_ParameterName = " === Deformer volume ==="
+			m_bExposeAsParameter = true
+			//m_DefaultValue = "Deformer bends vertexes by X axis. Engine makes correct deformer using Y and Z axises as well, but it seems like it doesn't use them, so volume will take vertexes only from start to end of X axis, and every vertex in Y and Z axises limiting it only by X axis. So volume is more like approximate visualisation of which vertexes would be affected just to see, where we should put X line to deform a prop."
+        },
+        {
+			_class = "CSmartPropVariable_Bool"
+			m_VariableName = "simplified_volume"
+			m_ParameterName = "Line instead of volume"
+			m_bExposeAsParameter = true
+			m_DefaultValue = true
+        },
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "deformer_origin_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = -32
+			m_ParameterName = "Deformer origin X"
+			m_flParamaterMinValue = -512
+			m_flParamaterMaxValue = 512
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "deformer_origin_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Deformer origin Y"
+			m_flParamaterMinValue = -512
+			m_flParamaterMaxValue = 512
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "deformer_origin_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 16
+			m_ParameterName = "Deformer origin Z"
+			m_flParamaterMinValue = -128
+			m_flParamaterMaxValue = 1024
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "angles_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Deformer rotate X"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "angles_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Deformer rotate Y"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "angles_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Deformer rotate Z"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty002"
+			m_ParameterName = " "
+			m_bExposeAsParameter = true
+        },
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty003"
+			m_ParameterName = " === Bend settings ==="
+			m_bExposeAsParameter = true
+        },
+		{
+			_class = "CSmartPropVariable_Bool"
+			m_VariableName = "enable_bend"
+			m_bExposeAsParameter = true
+			m_DefaultValue = false
+			m_ParameterName = "Enable bending"
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "deformer_radius"
+			m_ParameterName = "Bend radius"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 30
+			m_flParamaterMinValue = 1
+			m_flParamaterMaxValue = 512
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "angle"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 90
+			m_ParameterName = "Manual bend angle"
+			m_flParamaterMinValue = 0
+			m_flParamaterMaxValue = 720
+		},
+		{
+			_class = "CSmartPropVariable_Bool"
+			m_VariableName = "auto_angle"
+			m_bExposeAsParameter = true
+			m_DefaultValue = true
+			m_ParameterName = "Auto angle"
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "auto_angle_extension"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 1
+			m_ParameterName = "Auto angle extension"
+			m_flParamaterMinValue = 0.25
+			m_flParamaterMaxValue = 2
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "bend_point"
+			m_bExposeAsParameter = true
+			m_DefaultValue = ""
+			m_ParameterName = "Bend point"
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_x"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_y"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_z"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_x_min"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_y_min"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "size_z_min"
+			m_bExposeAsParameter = false
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "rotator_radius"
+			m_bExposeAsParameter = false
+			m_DefaultValue = "16"
+			m_ParameterName = "Rotators radius"
+			m_flParamaterMinValue = 4
+			m_flParamaterMaxValue = 32
+		},
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty007"
+			m_ParameterName = " "
+			m_bExposeAsParameter = true
+        },
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty008"
+			m_ParameterName = " === Locators settings ==="
+			m_bExposeAsParameter = true
+			//m_DefaultValue = "WARNING: Big bend locators might freeze Hammer for a few seconds."
+        },
+		{
+			_class = "CSmartPropVariable_Bool"
+			m_VariableName = "locators_scale_bool"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "false"
+			m_ParameterName = "Big bend locators (WARNING: Changing this option might freeze Hammer for a few seconds)"
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "locators_scale"
+			m_bExposeAsParameter = false
+			m_DefaultValue = "1"
+			m_ParameterName = "Bend locators scale"
+			m_flParamaterMinValue = 0.25
+			m_flParamaterMaxValue = 8
+		},
+		{
+			_class = "CSmartPropVariable_Bool"
+			m_VariableName = "hide_locators"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "false"
+			m_ParameterName = "Hide bend locators"
+		},
+		
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty005"
+			m_ParameterName = " "
+			m_bExposeAsParameter = true
+        },
+        {
+			_class = "CSmartPropVariable_String"
+			m_VariableName = "empty006"
+			m_ParameterName = " === Second model settings ==="
+			m_bExposeAsParameter = true
+			m_DefaultValue = ""
+        },
+		{
+            _class = "CSmartPropVariable_Bool"
+            m_DefaultValue = "false"
+            m_bExposeAsParameter = true
+            m_VariableName = "enable_second_model"
+            m_DisplayName = "Enable second model"
+        },
+        {
+			_class = "CSmartPropVariable_Model"
+			m_VariableName = "model2"
+			m_ParameterName = "Second model"
+			m_bExposeAsParameter = true
+			m_DefaultValue = resource_name:"models/props/de_train/hr_train_s2/train_spill/spill_kit_barrier_01a.vmdl"
+        },
+		{
+            _class = "CSmartPropVariable_String"
+            m_DefaultValue = "type_skin_name_here"
+            m_bExposeAsParameter = true
+            m_DisplayName = "Second model skin"
+            m_VariableName = "model2_skin"
+        },
+		{
+			_class = "CSmartPropVariable_Color"
+			m_VariableName = "model2_tint"
+			m_ParameterName = "Second model tint"
+			m_bExposeAsParameter = true
+			m_DefaultValue = [255,255,255]
+		},
+        {
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_scale"
+			m_ParameterName = "Second model scale"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 1
+			m_flParamaterMinValue = 0.25
+			m_flParamaterMaxValue = 2
+        },
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_origin_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 100
+			m_ParameterName = "Second model origin X"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_origin_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Second model origin Y"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_origin_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = 0
+			m_ParameterName = "Second model origin Z"
+			m_flParamaterMinValue = -256
+			m_flParamaterMaxValue = 256
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_angles_x"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Second model rotate X"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_angles_y"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Second model rotate Y"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "model2_angles_z"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "0"
+			m_ParameterName = "Second model rotate Z"
+			m_flParamaterMinValue = -180
+			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Float"
+			m_VariableName = "pi"
+			m_bExposeAsParameter = false
+			m_DefaultValue = "3.14159265359"
+		},
+	]
+	m_Children = 
+	[
+		{
+			_class = "CSmartPropElement_Group"
+			m_Modifiers = 
+			[
+				{
+					_class = "CSmartPropOperation_Translate"
+					m_vPosition = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "deformer_origin_x"
+							},
+							{
+								m_Expression = "deformer_origin_y"
+							},
+							{
+								m_Expression = "deformer_origin_z"
+							},
+						]
+					}
+				},
+			]
+			m_Children =
+			[
+				{
+					_class = "CSmartPropElement_Group"
+					m_Modifiers = 
+					[
+						{
+							_class = "CSmartPropOperation_Rotate"
+							m_vRotation = 
+							{
+								m_Components = 
+								[
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "angles_y"
+									},
+									{
+										m_Expression = "angles_z"
+									},
+								]
+							}
+						},
+						{
+							_class = "CSmartPropOperation_CreateRotator"
+							m_flDisplayRadius = {m_Expression = "rotator_radius"}
+							m_vRotationAxis = 
+							[
+								0.000000,
+								1.000000,
+								0.000000,
+							]
+							m_bEnabled = false
+							m_OutputVariable = "angles_x"
+						},
+					]
+				},
+				{
+					_class = "CSmartPropElement_Group"
+					m_Modifiers = 
+					[
+						{
+							_class = "CSmartPropOperation_Rotate"
+							m_vRotation = 
+							{
+								m_Components = 
+								[
+									{
+										m_Expression = "angles_x"
+									},
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "angles_z"
+									},
+								]
+							}
+						},
+						{
+							_class = "CSmartPropOperation_CreateRotator"
+							m_flDisplayRadius = {m_Expression = "rotator_radius"}
+							m_vRotationAxis = 
+							[
+								0.000000,
+								0.000000,
+								1.000000,
+							]
+							m_bEnabled = false
+							m_OutputVariable = "angles_y"
+						},
+					]
+				},
+				{
+					_class = "CSmartPropElement_Group"
+					m_Modifiers = 
+					[
+						{
+							_class = "CSmartPropOperation_Rotate"
+							m_vRotation = 
+							{
+								m_Components = 
+								[
+									{
+										m_Expression = "angles_x"
+									},
+									{
+										m_Expression = "angles_y"
+									},
+									{
+										m_Expression = "0"
+									},
+								]
+							}
+						},
+						{
+							_class = "CSmartPropOperation_CreateRotator"
+							m_flDisplayRadius = {m_Expression = "rotator_radius"}
+							m_vRotationAxis = 
+							[
+								1.000000,
+								0.000000,
+								0.000000,
+							]
+							m_bEnabled = false
+							m_OutputVariable = "angles_z"
+						},
+					]
+				},
+			]
+		},
+		{
+			_class = "CSmartPropElement_Group"
+			m_Modifiers = 
+			[
+				{
+					_class = "CSmartPropOperation_Translate"
+					m_vPosition = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "deformer_origin_x"
+							},
+							{
+								m_Expression = "deformer_origin_y"
+							},
+							{
+								m_Expression = "deformer_origin_z"
+							},
+						]
+					}
+				},
+				{
+					_class = "CSmartPropOperation_Rotate"
+					m_vRotation = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "angles_x"
+							},
+							{
+								m_Expression = "angles_y"
+							},
+							{
+								m_Expression = "angles_z"
+							},
+						]
+					}
+				},
+				{
+					_class = "CSmartPropOperation_CreateSizer"
+					m_bEnabled = {m_Expression = "!simplified_volume"}
+					m_flInitialMinX = 0.000000
+					m_flInitialMinY = 0.000000
+					m_flInitialMinZ = 0.000000
+					m_flInitialMaxX = 32.000000
+					m_flInitialMaxY = 32.000000
+					m_flInitialMaxZ = 32.000000
+					m_OutputVariableMaxX = "size_x"
+					m_OutputVariableMaxY = "size_y"
+					m_OutputVariableMaxZ = "size_z"
+				},
+				{
+					_class = "CSmartPropOperation_CreateSizer"
+					m_bEnabled = {m_Expression = "simplified_volume"}
+					m_flInitialMinX = 0.000000
+					m_flInitialMinY = -32.000000
+					m_flInitialMinZ = -32.000000
+					m_flInitialMaxX = 32.000000
+					m_flInitialMaxY = 32.000000
+					m_flInitialMaxZ = 32.000000
+					m_flConstraintMinY = -32.000000
+					m_flConstraintMinZ = -32.000000
+					m_flConstraintMaxY = 32.000000
+					m_flConstraintMaxZ = 32.000000
+					m_OutputVariableMaxX = "size_x"
+				},
+				{
+					_class = "CSmartPropOperation_SetVariableFloat"
+					m_VariableValue = 
+					{
+						m_Expression = "auto_angle ? (size_x / (2 * deformer_radius * pi / 360)) * auto_angle_extension : angle"
+					}
+					m_VariableName = "angle"
+				},
+				{
+					_class = "CSmartPropOperation_SetVariableFloat"
+					m_VariableValue = 
+					{
+						m_Expression = "deformer_origin_x"
+					}
+					m_VariableName = "deformer_origin_x"
+				},
+				{
+					_class = "CSmartPropOperation_SetVariableFloat"
+					m_VariableValue = 
+					{
+						m_Expression = "deformer_origin_y"
+					}
+					m_VariableName = "deformer_origin_y"
+				},
+				{
+					_class = "CSmartPropOperation_SetVariableFloat"
+					m_VariableValue = 
+					{
+						m_Expression = "deformer_origin_z"
+					}
+					m_VariableName = "deformer_origin_z"
+				},
+			]
+		},
+		{
+			_class = "CSmartPropElement_Group"
+			m_Modifiers = 
+			[
+				{
+					_class = "CSmartPropOperation_Translate"
+					m_vPosition = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "deformer_origin_x"
+							},
+							{
+								m_Expression = "deformer_origin_y"
+							},
+							{
+								m_Expression = "deformer_origin_z"
+							},
+						]
+					}
+				},
+				{
+					_class = "CSmartPropOperation_Rotate"
+					m_vRotation = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "angles_x"
+							},
+							{
+								m_Expression = "angles_y"
+							},
+							{
+								m_Expression = "angles_z"
+							},
+						]
+					}
+				},
+				{
+					_class = "CSmartPropOperation_Translate"
+					m_vPosition = 
+					{
+						m_Components = 
+						[
+							{
+								m_Expression = "size_x_min"
+							},
+							{
+								m_Expression = "size_y_min - deformer_radius"
+							},
+							{
+								m_Expression = "size_z_min"
+							},
+						]
+					}
+				},
+			]
+			m_Children = 
+			[
+				{
+					_class = "CSmartPropElement_Group"
+					m_Modifiers = 
+					[
+						{
+							_class = "CSmartPropOperation_Rotate"
+							m_vRotation = 
+							{
+								m_Components = 
+								[
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "0"
+									},
+								]
+							}
+						},
+						{
+							_class = "CSmartPropOperation_Translate"
+							m_vPosition = 
+							{
+								m_Components = 
+								[
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "0"
+									},
+									{
+										m_Expression = "0"
+									},
+								]
+							}
+						},
+					]
+					m_Children =
+					[
+						{
+							_class = "CSmartPropElement_Group"
+							m_Modifiers =
+							[
+								{
+									_class = "CSmartPropOperation_SetVariableFloat"
+									m_VariableValue = 
+									{
+										m_Expression = "locators_scale_bool ? 4 : 1"
+									}
+									m_VariableName = "locators_scale"
+								},
+								{
+									_class = "CSmartPropOperation_Translate"
+									m_vPosition = 
+									{
+										m_Components = 
+										[
+											{
+												m_Expression = "size_x * bend_point"
+											},
+											{
+												m_Expression = "0"
+											},
+											{
+												m_Expression = "0"
+											},
+										]
+									}
+								},
+								{
+									_class = "CSmartPropOperation_Rotate"
+									m_vRotation = 
+									{
+										m_Components = 
+										[
+											{
+												m_Expression = "0"
+											},
+											{
+												m_Expression = "angle * bend_point"
+											},
+											{
+												m_Expression = "0"
+											},
+										]
+									}
+								},
+							]
+							m_Children =
+							[
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "1"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "-angle * bend_point"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + (size_y * 0.5)"
+															},
+															{
+																m_Expression = "(size_z * 0.5)"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "1 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius"
+															},
+															{
+																m_Expression = "InstanceIndex()"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + size_y"
+															},
+															{
+																m_Expression = "InstanceIndex()"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "-angle"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius"
+															},
+															{
+																m_Expression = "InstanceIndex()"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "-angle"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + size_y"
+															},
+															{
+																m_Expression = "InstanceIndex()"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_y"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_y"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + InstanceIndex()"
+															},
+															{
+																m_Expression = "size_z"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_y"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "-angle"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_y"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "-angle"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + InstanceIndex()"
+															},
+															{
+																m_Expression = "size_z"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "0.15 * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "angle + 1"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "InstanceIndex() == (InstanceCount() - 1) ? -angle : -InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "(InstanceIndex() % 15 == 0 ? 0.3 : 0.15) * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_y < 1 ? 0 : angle + 1"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "InstanceIndex() == (InstanceCount() - 1) ? -angle : -InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + size_y - size_y_min"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "(InstanceIndex() % 15 == 0 ? 0.3 : 0.15) * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z < 1 ? 0 : angle + 1"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "InstanceIndex() == (InstanceCount() - 1) ? -angle : -InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius"
+															},
+															{
+																m_Expression = "size_z - size_z_min"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "(InstanceIndex() % 15 == 0 ? 0.3 : 0.15) * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = 
+									{
+										m_Expression = "size_z < 1 ? 0 : angle + 1"
+									}
+									m_Modifiers =
+									[
+									
+									]
+									m_Children =
+									[
+										{
+											_class = "CSmartPropElement_Group"
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "InstanceIndex() == (InstanceCount() - 1) ? -angle : -InstanceIndex()"
+															},
+															{
+																m_Expression = "0"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = 
+													{
+														m_Components = 
+														[
+															{
+																m_Expression = "0"
+															},
+															{
+																m_Expression = "deformer_radius + size_y - size_y_min"
+															},
+															{
+																m_Expression = "size_z - size_z_min"
+															},
+														]
+													}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+													m_bEnabled = {m_Expression = "!hide_locators"}
+													m_flDisplayScale = {m_Expression = "(InstanceIndex() % 15 == 0 ? 0.3 : 0.15) * locators_scale"}
+													m_bAllowScale = false
+													m_bAllowRotation = false
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+			]
+		},
+		{
+			_class = "CSmartPropElement_BendDeformer"
+			m_bDeformationEnabled = {m_Expression = "enable_bend"}
+			m_flBendAngle = {m_Expression = "angle"}
+			m_flBendPoint = {m_SourceName = "bend_point"}
+			m_flBendRadius = {m_SourceName = "deformer_radius"}
+			m_vOrigin = 
+			{
+				m_Components = [{m_Expression = "deformer_origin_x"},{m_Expression = "deformer_origin_y"},{m_Expression = "deformer_origin_z"}]
+			}
+			m_vSize = 
+			{
+				m_Components = [{m_Expression = "size_x - size_x_min"},{m_Expression = "size_y - size_y_min"},{m_Expression = "size_z - size_z_min"}]
+			}
+			m_vAngles = 
+			{
+				m_Components = [{m_Expression = "angles_x"},{m_Expression = "angles_y"},{m_Expression = "angles_z"}]
+			}
+			m_Modifiers = 
+			[
+				{
+					_class = "CSmartPropOperation_Rotate"
+					m_vRotation = {m_Components = [{m_Expression = "0"},{m_Expression = "0"},{m_Expression = "0"}]}
+				},
+			]
+			m_Children = 
+			[
+				{
+					_class = "CSmartPropElement_Group"
+					m_Children = 
+					[
+						{
+							_class = "CSmartPropElement_Group"
+							m_Children = 
+							[
+								{
+									_class = "CSmartPropElement_ModifyState"
+									m_Modifiers = 
+									[
+										{
+											_class = "CSmartPropOperation_SetTintColor"
+											m_Mode = "REPLACE"
+											m_ColorChoices = [{m_Color = {m_SourceName = "model_tint"}}]
+										}
+									]
+								},
+								{
+									_class = "CSmartPropElement_Model"
+									m_sModelName = {m_SourceName = "model"}
+									m_MaterialGroupName = {m_SourceName = "model_skin"}
+									m_vModelScale = {m_Components = [{m_Expression = "model_scale"},{m_Expression = "model_scale"},{m_Expression = "model_scale"}]}
+									m_Modifiers = 
+									[
+										{
+											_class = "CSmartPropOperation_Translate"
+											m_vPosition = {m_Components = [{m_Expression = "model_origin_x"},{m_Expression = "model_origin_y"},{m_Expression = "model_origin_z"}]}
+										},
+										{
+											_class = "CSmartPropOperation_Rotate"
+											m_vRotation = {m_Components = [{m_Expression = "model_angles_x"},{m_Expression = "model_angles_y"},{m_Expression = "model_angles_z"}]}
+										}, 
+										{
+											_class = "CSmartPropOperation_CreateLocator"
+										},
+									]
+								},
+								{
+									_class = "CSmartPropElement_ModifyState"
+									m_Modifiers = 
+									[
+										{
+											_class = "CSmartPropOperation_SetTintColor"
+											m_Mode = "REPLACE"
+											m_ColorChoices = [{m_Color = {m_SourceName = "model2_tint"}}]
+										}
+									]
+								},
+								{
+									_class = "CSmartPropElement_Model"
+									m_sModelName = {m_SourceName = "model2"}
+									m_MaterialGroupName = {m_SourceName = "model2_skin"}
+									m_vModelScale = {m_Components = [{m_Expression = "model2_scale"},{m_Expression = "model2_scale"},{m_Expression = "model2_scale"}]}
+									m_Modifiers = 
+									[
+										{
+											_class = "CSmartPropFilter_VariableValue"
+											m_VariableComparison = 
+											{
+												m_Name = "enable_second_model"
+												m_Value = true
+												m_Comparison = "EQUAL"
+											}
+										},
+										{
+											_class = "CSmartPropOperation_Translate"
+											m_vPosition = {m_Components = [{m_Expression = "model2_origin_x"},{m_Expression = "model2_origin_y"},{m_Expression = "model2_origin_z"}]}
+										},
+										{
+											_class = "CSmartPropOperation_Rotate"
+											m_vRotation = {m_Components = [{m_Expression = "model2_angles_x"},{m_Expression = "model2_angles_y"},{m_Expression = "model2_angles_z"}]}
+										},
+										{
+											_class = "CSmartPropOperation_CreateLocator"
+										},
+									]
+								},
+							]
+						}
+					]
+				}
+			]
+		},
+	]
+}
