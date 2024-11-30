@@ -30,13 +30,11 @@
 			m_DefaultValue = [255,255,255]
 		},
         {
-			_class = "CSmartPropVariable_Float"
+			_class = "CSmartPropVariable_Vector3D"
 			m_VariableName = "model_scale"
 			m_ParameterName = "Model scale"
 			m_bExposeAsParameter = true
-			m_DefaultValue = 1
-			m_flParamaterMinValue = 0.25
-			m_flParamaterMaxValue = 2
+			m_DefaultValue = [1,1,1]
         },
 		{
 			_class = "CSmartPropVariable_Float"
@@ -116,7 +114,7 @@
 			_class = "CSmartPropVariable_Float"
 			m_VariableName = "deformer_origin_x"
 			m_bExposeAsParameter = true
-			m_DefaultValue = -32
+			m_DefaultValue = 0
 			m_ParameterName = "Deformer origin X"
 			m_flParamaterMinValue = -512
 			m_flParamaterMaxValue = 512
@@ -190,7 +188,7 @@
 			m_VariableName = "deformer_radius"
 			m_ParameterName = "Bend radius"
 			m_bExposeAsParameter = true
-			m_DefaultValue = 30
+			m_DefaultValue = 75
 			m_flParamaterMinValue = 1
 			m_flParamaterMaxValue = 512
 		},
@@ -344,13 +342,11 @@
 			m_DefaultValue = [255,255,255]
 		},
         {
-			_class = "CSmartPropVariable_Float"
+			_class = "CSmartPropVariable_Vector3D"
 			m_VariableName = "model2_scale"
 			m_ParameterName = "Second model scale"
 			m_bExposeAsParameter = true
-			m_DefaultValue = 1
-			m_flParamaterMinValue = 0.25
-			m_flParamaterMaxValue = 2
+			m_DefaultValue = [1,1,1]
         },
 		{
 			_class = "CSmartPropVariable_Float"
@@ -405,6 +401,15 @@
 			m_ParameterName = "Second model rotate Z"
 			m_flParamaterMinValue = -180
 			m_flParamaterMaxValue = 180
+		},
+		{
+			_class = "CSmartPropVariable_Int"
+			m_VariableName = "model2_amount"
+			m_bExposeAsParameter = true
+			m_DefaultValue = "1"
+			m_ParameterName = "Second model amount"
+			m_nParamaterMinValue = 1
+			m_nParamaterMaxValue = 16
 		},
 		{
 			_class = "CSmartPropVariable_Float"
@@ -1682,7 +1687,7 @@
 									_class = "CSmartPropElement_Model"
 									m_sModelName = {m_SourceName = "model"}
 									m_MaterialGroupName = {m_SourceName = "model_skin"}
-									m_vModelScale = {m_Components = [{m_Expression = "model_scale"},{m_Expression = "model_scale"},{m_Expression = "model_scale"}]}
+									m_vModelScale = {m_Components = [{m_Expression = "model_scale.x"},{m_Expression = "model_scale.y"},{m_Expression = "model_scale.z"}]}
 									m_Modifiers = 
 									[
 										{
@@ -1710,34 +1715,41 @@
 									]
 								},
 								{
-									_class = "CSmartPropElement_Model"
-									m_sModelName = {m_SourceName = "model2"}
-									m_MaterialGroupName = {m_SourceName = "model2_skin"}
-									m_vModelScale = {m_Components = [{m_Expression = "model2_scale"},{m_Expression = "model2_scale"},{m_Expression = "model2_scale"}]}
-									m_Modifiers = 
+									_class = "CSmartPropElement_PlaceMultiple"
+									m_nCount = {m_Expression = "model2_amount"}
+									m_Children =
 									[
 										{
-											_class = "CSmartPropFilter_VariableValue"
-											m_VariableComparison = 
-											{
-												m_Name = "enable_second_model"
-												m_Value = true
-												m_Comparison = "EQUAL"
-											}
-										},
-										{
-											_class = "CSmartPropOperation_Translate"
-											m_vPosition = {m_Components = [{m_Expression = "model2_origin_x"},{m_Expression = "model2_origin_y"},{m_Expression = "model2_origin_z"}]}
-										},
-										{
-											_class = "CSmartPropOperation_Rotate"
-											m_vRotation = {m_Components = [{m_Expression = "model2_angles_x"},{m_Expression = "model2_angles_y"},{m_Expression = "model2_angles_z"}]}
-										},
-										{
-											_class = "CSmartPropOperation_CreateLocator"
+											_class = "CSmartPropElement_Model"
+											m_sModelName = {m_SourceName = "model2"}
+											m_MaterialGroupName = {m_SourceName = "model2_skin"}
+											m_vModelScale = {m_Components = [{m_Expression = "model2_scale.x"},{m_Expression = "model2_scale.y"},{m_Expression = "model2_scale.z"}]}
+											m_Modifiers = 
+											[
+												{
+													_class = "CSmartPropFilter_VariableValue"
+													m_VariableComparison = 
+													{
+														m_Name = "enable_second_model"
+														m_Value = true
+														m_Comparison = "EQUAL"
+													}
+												},
+												{
+													_class = "CSmartPropOperation_Translate"
+													m_vPosition = {m_Components = [{m_Expression = "model2_origin_x + ((model2_origin_x - model_origin_x) * InstanceIndex())"},{m_Expression = "model2_origin_y + ((model2_origin_y - model_origin_y) * InstanceIndex())"},{m_Expression = "model2_origin_z + ((model2_origin_z - model_origin_z) * InstanceIndex())"}]}
+												},
+												{
+													_class = "CSmartPropOperation_Rotate"
+													m_vRotation = {m_Components = [{m_Expression = "model2_angles_x"},{m_Expression = "model2_angles_y"},{m_Expression = "model2_angles_z"}]}
+												},
+												{
+													_class = "CSmartPropOperation_CreateLocator"
+												},
+											]
 										},
 									]
-								},
+								}
 							]
 						}
 					]
