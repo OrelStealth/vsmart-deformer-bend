@@ -189,7 +189,7 @@
 			m_ParameterName = "Bend radius"
 			m_bExposeAsParameter = true
 			m_DefaultValue = 75
-			m_flParamaterMinValue = 1
+			m_flParamaterMinValue = 4
 			m_flParamaterMaxValue = 512
 		},
 		{
